@@ -1,0 +1,152 @@
+.description {
+  @include flex;
+  margin-top: -126px;
+  margin-right: auto;
+  padding-top: 259px;
+  padding-left: 133px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  background-color: white;
+}
+
+.description__title {
+  margin: 0 0 31px;
+  font-size: 16px;
+
+  &--characteristics {
+    margin-bottom: 48px;
+  }
+}
+
+.description__text {
+  margin: 0 0 32px;
+}
+
+.description__box {
+  &--depiction {
+    margin-bottom: 90px;
+  }
+}
+
+.description__button-box {
+  min-width: 396px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.description__wrapper {
+  width: 39.47%;
+  margin-right: 154px;
+}
+
+.description__characteristics {
+  width: 31.5%;
+  margin-bottom: 76px;
+  padding: 10px 0 0 0;
+}
+
+.description__list {
+  @include reset-list;
+  margin-bottom: 95px;
+}
+
+.description__item {
+  @include flex;
+  margin-bottom: 18px;
+}
+
+.description__parameter {
+  width: 145px;
+  margin: 0;
+}
+
+.description__parameter-text {
+  width: 350px;
+  margin: 0;
+}
+
+//Tablet
+@include tablet {
+  .description {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .description__wrapper {
+    width: 100%;
+    margin-bottom: 35px;
+    margin-right: 0;
+  }
+
+  .description__title {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 10px;
+
+    &--characteristics {
+      margin-bottom: 20px;
+    }
+  }
+
+  .description__text {
+    margin-bottom: 5px;
+  }
+
+  .description__box {
+    &--depiction {
+      margin-bottom: 35px;
+    }
+  }
+
+  .description__characteristics {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .description__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .description__list {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .description__parameter {
+    margin-right: 15px;
+  }
+}
+
+//Mobile
+@include mobile {
+  .description {
+    position: relative;
+    padding: 15px 15px;
+    padding-bottom: 63px;
+  }
+
+  .description__item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .description__button-box {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    min-width: 100px;
+  }
+
+  .description__item {
+    margin-bottom: 5px;
+  }
+}
+

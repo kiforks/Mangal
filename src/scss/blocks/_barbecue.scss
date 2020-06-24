@@ -1,0 +1,462 @@
+.barbecue {
+  width: 100%;
+  max-width: 1560px;
+  @include center-margin;
+  color: $title-grey;
+  overflow: hidden;
+}
+
+.barbecue__list {
+  @include reset-list;
+}
+
+.barbecue__title {
+  margin: 0 0 58px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.barbecue__link {
+  position: relative;
+  width: 266px;
+}
+
+.barbecue__number {
+  @include flex;
+  align-items: center;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 18px;
+  @include before-clean {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 70px;
+    margin-right: 37px;
+    background-color: $gold;
+  }
+}
+
+.barbecue__item {
+  position: relative;
+  @include flex;
+  justify-content: space-between;
+  @include center-margin;
+  width: 1050px;
+  margin-bottom: 195px;
+  @include before {
+    top: 39px;
+    left: -254px;
+    width: 1px;
+    height: 508px;
+  }
+
+  &:nth-child(2n+2) {
+    .barbecue__photo {
+      order: -1;
+      @include after-clean {
+        top: 77px;
+        left: 0;
+        right: 262px;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+        border-right: 0;
+      }
+    }
+
+    .barbecue__inner {
+      padding-top: 64px;
+      margin-left: 11px;
+      margin-right: 0;
+    }
+
+    .barbecue__number {
+      margin-bottom: 33px;
+    }
+  }
+
+  &--hurman {
+    @include before-clean {
+      background-image: linear-gradient(to bottom, $gold 25%, #333333 25%);
+    }
+  }
+
+  &--grand {
+    margin-bottom: 200px;
+
+    .barbecue__title {
+      margin-bottom: 39px;
+    }
+
+    .barbecue__description {
+      padding-bottom: 189px;
+    }
+
+    .barbecue__photo {
+      @include before-clean {
+        left: 73px;
+      }
+    }
+    @include before-clean {
+      background-image: linear-gradient(to bottom, #333333 0, #333333 25%, $gold 25%, $gold 50%, #333333 50%);
+    }
+  }
+
+  &--grand-plus {
+    margin-bottom: 175px;
+    @include before-clean {
+      background-image: linear-gradient(to bottom, #333333 0, #333333 50%, $gold 50%, $gold 75%, #333333 75%);
+    }
+
+    .barbecue__inner {
+      padding-top: 42px;
+    }
+
+    .barbecue__number {
+      margin-bottom: 26px;
+    }
+
+    .barbecue__title {
+      margin-bottom: 25px;
+    }
+
+    .barbecue__description {
+      padding-bottom: 204px;
+    }
+  }
+
+  &--hatynka {
+    .barbecue__title {
+      margin-bottom: 33px;
+    }
+
+    .barbecue__description {
+      padding-bottom: 208px;
+    }
+
+    .barbecue__photo {
+      @include before-clean {
+        left: 73px;
+      }
+    }
+
+    .barbecue__inner {
+      padding-top: 62px;
+    }
+    @include before-clean {
+      background-image: linear-gradient(to bottom, #333333 0, #333333 75%, $gold 75%);
+    }
+  }
+}
+
+.barbecue__description {
+  position: relative;
+  margin: 0;
+  padding-bottom: 220px;
+  @include before {
+    top: 204px;
+    left: 131px;
+    width: 1px;
+    height: 50px;
+    background-color: $gold;
+    box-shadow: 0 2px 8px rgba(239, 44, 44, 0.6);
+  }
+}
+
+.barbecue__inner {
+  display: flex;
+  flex-direction: column;
+  width: 505px;
+  padding-top: 24px;
+  background-repeat: no-repeat;
+}
+
+.barbecue__photo {
+  position: relative;
+  width: 523px;
+  margin: 0;
+  @include before {
+    top: 128px;
+    left: 64px;
+    z-index: -1;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+  }
+  @include after {
+    z-index: -2;
+    top: 57px;
+    left: 262px;
+    width: 260px;
+    height: 520px;
+    border: 1px solid $gold;
+    border-left: 0;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  }
+
+  &--hurman {
+    @include before-clean {
+      @include background-image('../img/main/hurman--background.jpg',
+                                '../img/main/hurman--background.webp');
+    }
+  }
+
+  &--grand {
+    @include before-clean {
+      top: 147px;
+      @include background-image('../img/main/grand--background.jpg',
+                                '../img/main/grand--background.webp');
+    }
+  }
+
+  &--grand-plus {
+    @include before-clean {
+      @include background-image('../img/main/grand+--background.jpg',
+                                '../img/main/grand+--background.webp');
+    }
+  }
+
+  &--hatynka {
+    @include before-clean {
+      top: 157px;
+      left: 70px;
+      @include background-image('../img/main/hatynka--background.jpg',
+        '../img/main/hatynka--background.webp');
+    }
+
+    .barbecue__image {
+      position: relative;
+      left: -143px;
+      top: 31px;
+      max-width: 1000px;
+    }
+  }
+}
+
+//Tablet
+@include tablet {
+  .barbecue {
+    width: 768px;
+    @include padding-tablet;
+    @include center-margin;
+  }
+
+  .barbecue__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .barbecue__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+    @include before-clean {
+      display: none;
+    }
+
+    &:nth-child(2n+2) {
+      .barbecue__photo {
+        order: 1;
+
+        &--hatynka {
+          @include after-clean {
+            top: 30px;
+          }
+        }
+      }
+
+      .barbecue__inner {
+        padding-top: 0;
+        margin: 0 0 10px;
+      }
+    }
+
+    &--grand {
+      margin-bottom: 0;
+
+      .barbecue__description {
+        padding-bottom: 30px;
+      }
+    }
+
+    &--grand-plus {
+      margin-bottom: 0;
+      padding-bottom: 200px;
+
+      .barbecue__inner {
+        padding-top: 0;
+      }
+
+      .barbecue__description {
+        padding-bottom: 30px;
+      }
+    }
+
+    &--hatynka {
+      padding-bottom: 210px;;
+
+      .barbecue__description {
+        padding-bottom: 30px;
+      }
+    }
+
+    .barbecue__photo {
+      &--hatynka {
+        .barbecue__image {
+          top: -19px;
+        }
+
+        @include before-clean {
+          top: 110px;
+        }
+      }
+    }
+  }
+
+  .barbecue__link {
+    @include center-margin;
+    width: 100%;
+  }
+
+  .barbecue__inner {
+    width: 100%;
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+  .barbecue__description {
+    padding-bottom: 30px;
+    @include before {
+      display: none;
+    }
+  }
+
+  .barbecue__title {
+    margin-bottom: 30px;
+  }
+}
+
+//Mobile
+@include mobile {
+  .barbecue {
+    width: 320px;
+    @include padding-mobile;
+  }
+
+  .barbecue__photo {
+    width: 100%;
+    @include after-clean {
+      display: none;
+    }
+    @include before-clean {
+      top: 71px;
+      left: 37px;
+      width: 200px;
+      height: 200px;
+      background-size: contain;
+    }
+  }
+
+  .barbecue__inner {
+    padding-top: 0;
+  }
+
+  .barbecue__image {
+    position: static;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .barbecue__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-bottom: 30px;
+    @include before-clean {
+      display: none;
+    }
+
+    .barbecue__description {
+      padding-bottom: 30px;
+      @include before-clean {
+        display: none;
+      }
+    }
+
+    &:nth-child(2n+2) {
+      .barbecue__photo {
+        order: 1;
+      }
+
+      .barbecue__inner {
+        padding-top: 0;
+        margin: 0;
+      }
+    }
+
+    &--grand {
+      padding-bottom: 30px;
+
+      .barbecue__description {
+        padding-bottom: 30px;
+      }
+
+      .barbecue__photo {
+        @include before-clean {
+          left: 40px;
+          top: 77px;
+        }
+      }
+    }
+
+    &--grand-plus {
+      padding-bottom: 86px;
+
+      .barbecue__description {
+        padding-bottom: 30px;
+      }
+
+      .barbecue__inner {
+        padding-top: 0;
+      }
+    }
+
+    &--hatynka {
+      padding-bottom: 140px;
+
+      .barbecue__description {
+        padding-bottom: 30px;
+      }
+
+      .barbecue__photo {
+        @include before-clean {
+          left: 37px;
+        }
+      }
+
+      .barbecue__image {
+        left: -84px;
+        top: -5px;
+        width: 381px;
+      }
+    }
+
+    &:last-child {
+      .barbecue__inner {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .barbecue__title {
+    margin-bottom: 20px;
+  }
+}

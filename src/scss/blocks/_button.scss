@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  @include padding-vertical(15px, 13px);
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: $gold;
+  border: 1px solid #d19841;
+  box-sizing: border-box;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  @include hover {
+    background-color: $gold;
+    color: black;
+  }
+}
+
+//Mobile
+@include mobile {
+  .button {
+    width: 280px;
+  }
+}

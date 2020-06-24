@@ -1,0 +1,13 @@
+/* param: font-name, font-path, font-weight, font-style
+Example:
+@include font-face('OpenSans', '../fonts/OpenSans', bold, normal); */
+
+@include font-face('Play', '../fonts/Play-Bold', bold);
+
+@include font-face('Play', '../fonts/Play-Regular');
+
+@include font-face('Roboto', '../fonts/Roboto-Light', 300);
+
+@include font-face('Rubik', '../fonts/Rubik-Regular');
+
+@include font-face('Rubik', '../fonts/Rubik-Light', 300);

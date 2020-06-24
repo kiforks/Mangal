@@ -1,0 +1,27 @@
+.main-catalog {
+  padding-bottom: 201px;
+  font-size: 16px;
+  @include background-image('../img/main/background/catalog.png',
+                            '../img/main/background/catalog.webp');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom left;
+}
+
+.main-catalog__catalog {
+  margin-bottom: 48px;
+}
+
+//Tablet
+@include tablet {
+  .main-catalog {
+    padding-bottom: 137px;
+  }
+}
+
+//Mobile
+@include mobile {
+  .main-catalog {
+    padding-bottom: 309px;
+  }
+}

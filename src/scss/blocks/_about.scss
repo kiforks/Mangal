@@ -1,0 +1,235 @@
+.about {
+  padding-top: 258px;
+  @include background-image('../img/main/background/wood.png',
+                            '../img/main/background/wood.webp');
+  background-position: top left;
+  background-size: 1920px;
+  background-repeat: no-repeat;
+}
+
+.about__services {
+  position: absolute;
+  right: 38px;
+  top: 294px;
+  width: 482px;
+  padding-left: 66px;
+  padding-top: 65px;
+  padding-right: 76px;
+  padding-bottom: 35px;
+  background-color: $gold;
+  @include before-after {
+    width: 80px;
+    height: 80px;
+    border: 1px solid $gold;
+  }
+  @include before-clean {
+    left: -25px;
+    bottom: -25px;
+    border-right: 0;
+    border-top: 0;
+  }
+  @include after-clean {
+    top: -24px;
+    right: -25px;
+    border-left: 0;
+    border-bottom: 0;
+  }
+}
+
+.about__title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 54px;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: 0.05em;
+  @include before {
+    bottom: -49px;
+    left: 121px;
+    height: 100px;
+    width: 1px;
+    background-color: $gold;
+    box-shadow: 0 0 10px rgba(239, 44, 44, 0.6);
+  }
+}
+
+.about__period {
+  margin: 0 0 62px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.about__description {
+  margin: 0 0 28px;
+  font-size: 17px;
+  line-height: 28px;
+  color: #e0e0e0;
+}
+
+.about__services-title {
+  margin: 0 0 43px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+}
+
+.about__service {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.about__description-box {
+  width: 1164px;
+  padding-left: 80px;
+  padding-right: 535px;
+  padding-top: 88px;
+  padding-bottom: 92px;
+  background: rgba(33, 33, 33, 0.5);
+}
+
+.about__wrapper {
+  position: relative;
+  width: 1311px;
+  padding-bottom: 234px;
+  @include center-margin;
+}
+
+.about__list {
+  @include reset-list;
+}
+
+.about__item {
+  position: relative;
+  padding-left: 65px;
+  padding-top: 2px;
+  margin-bottom: 22px;
+}
+
+.about__checkbox {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  @include before-after {
+    background-color: black;
+  }
+  @include before-clean {
+    top: 13px;
+    left: 9px;
+    width: 8px;
+    height: 2px;
+    transform: rotate(45deg);
+  }
+  @include after-clean {
+    top: 10px;
+    left: 12px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(135deg);
+  }
+}
+
+//Tablet
+@include tablet {
+  .about {
+    padding-top: 0;
+  }
+
+  .about__wrapper {
+    width: $tablet-width;
+    padding-bottom: 30px;
+    @include padding-tablet;
+  }
+
+  .about__services {
+    position: static;
+    width: 80%;
+    @include center-margin;
+    padding: 30px 20px;
+    @include before-after-clean {
+      display: none;
+    }
+  }
+
+  .about__description-box {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include padding-horizontal(15px, 15px);
+    margin-bottom: 30px;
+  }
+
+  .about__period {
+    margin-bottom: 30px;
+  }
+
+  .about__description {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .about__title {
+    padding-bottom: 0;
+    @include before-clean {
+      display: none;
+    }
+  }
+}
+
+//Mobile
+@include mobile {
+  .about__wrapper {
+    width: 320px;
+    @include padding-mobile;
+  }
+
+  .about__title {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+    @include line-height-auto;
+    @include before-clean {
+      display: none;
+    }
+  }
+
+  .about__description-box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .about__period {
+    text-align: center;
+  }
+
+  .about__description {
+    text-align: center;
+  }
+
+  .about__services-title {
+    text-align: center;
+  }
+
+  .about__services {
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .about__item {
+    padding-left: 45px;
+    padding-top: 0;
+  }
+}

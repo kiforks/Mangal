@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favico.png">
+  <link rel="preload" href="fonts/Play-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Play-Regular.woff2" as="font">
+  <include src="src/posthtml/templates/webp.html"></include>
+</head>
+<body>
+  <include src="src/posthtml/templates/sprite.html"></include>
+  <include src="src/posthtml/blocks/_header.html"></include>
+
+  <main class="main-catalog">
+    <section class="main-catalog__catalog catalog">
+      <h1 class="visually-hidden">Каталог</h1>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <div class="catalog__header">
+            <h3 class="catalog__title">Барбекю «Гурман»</h3>
+            <p class="catalog__price">
+              <span class="catalog__price-text">Ціна</span>
+              8900/8400 грн
+            </p>
+          </div>
+          <div class="catalog__wrapper">
+            <div class="catalog__inner swiper-container">
+              <p class="catalog__photo swiper-wrapper">
+                <picture class="catalog__image swiper-slide">
+                  <source type="image/webp" srcset="img/main/catalog/photo.webp">
+                  <img src="img/main/catalog/photo.jpg" alt="Барбекю «Гурман»" class="catalog__img">
+                </picture>
+                <picture class="catalog__image swiper-slide">
+                  <source type="image/webp" srcset="img/main/gallery/photo-5.webp">
+                  <img src="img/main/gallery/photo-5.jpg" alt="Барбекю «Гурман»" class="catalog__img">
+                </picture>
+                <picture class="catalog__image swiper-slide">
+                  <source type="image/webp" srcset="img/main/gallery/photo-2.webp">
+                  <img src="img/main/gallery/photo-2.jpg" alt="Барбекю «Гурман»" class="catalog__img">
+                </picture>
+                <picture class="catalog__image swiper-slide">
+                  <source type="image/webp" srcset="img/main/gallery/photo-4.webp">
+                  <img src="img/main/gallery/photo-4.jpg" alt="Барбекю «Гурман»" class="catalog__img">
+                </picture>
+              </p>
+              <p class="catalog__count"></p>
+              <!-- Add Arrows -->
+              <div class="catalog__button catalog__button--next"></div>
+              <div class="catalog__button catalog__button--prev"></div>
+
+            </div>
+            <div class="catalog__description-box">
+              <p class="catalog__text">Садова піч барбекю «Гурман» підходить для регулярного використання протягом цілого року.</p>
+              <section class="catalog__advantages">
+                <h4 class="catalog__advantages-title">Переваги:</h4>
+                <ul class="catalog__advantages-list">
+                  <li class="catalog__advantages-item">-рівномірне прогрівання</li>
+                  <li class="catalog__advantages-item">-тривале збереження тепла</li>
+                  <li class="catalog__advantages-item">-відсутність деформації від перепаду температури</li>
+                  <li class="catalog__advantages-item">-невибагливість в обслуговуванні.</li>
+                </ul>
+              </section>
+
+                <input type="radio" class="catalog__radio catalog__radio--brown visually-hidden" name="catalog-radio" id="catalog-radio-1" checked>
+                <input type="radio" class="catalog__radio catalog__radio--dark-brown visually-hidden" name="catalog-radio" id="catalog-radio-2">
+                <input type="radio" class="catalog__radio catalog__radio--red visually-hidden" name="catalog-radio" id="catalog-radio-3">
+                <input type="radio" class="catalog__radio catalog__radio--white visually-hidden" name="catalog-radio" id="catalog-radio-4">
+                <input type="radio" class="catalog__radio catalog__radio--gray visually-hidden" name="catalog-radio" id="catalog-radio-5">
+
+              <ul class="catalog__color-list">
+                <li class="catalog__color-item catalog__color-item--brown">
+                  <label for="catalog-radio-1" class="catalog__label"></label>
+                  <p class="catalog__color">
+                    <img width="41" src="img/svg/catalog/brown.svg" alt="Коричневий" class="catalog__color-image">
+                  </p>
+                </li>
+                <li class="catalog__color-item catalog__color-item--dark-brown">
+                  <label for="catalog-radio-2" class="catalog__label"></label>
+                  <p class="catalog__color">
+                    <img width="41" src="img/svg/catalog/dark-brown.svg" alt="Темно-коричневий" class="catalog__color-image">
+                  </p>
+                </li>
+                <li class="catalog__color-item catalog__color-item--red">
+                  <label for="catalog-radio-3" class="catalog__label"></label>
+                  <p class="catalog__color">
+                    <img width="41" src="img/svg/catalog/red.svg" alt="Червоний" class="catalog__color-image">
+                  </p>
+                </li>
+                <li class="catalog__color-item catalog__color-item--white">
+                  <label for="catalog-radio-4" class="catalog__label"></label>
+                  <p class="catalog__color">
+                    <img width="41" src="img/svg/catalog/white.svg" alt="Білий" class="catalog__color-image">
+                  </p>
+                </li>
+                <li class="catalog__color-item catalog__color-item--gray">
+                  <label for="catalog-radio-5" class="catalog__label"></label>
+                  <p class="catalog__color">
+                    <img width="41" src="img/svg/catalog/gray.svg" alt="Сірий" class="catalog__color-image">
+                  </p>
+                </li>
+              </ul>
+              <div class="catalog__button-box">
+                <a href="#" class="catalog__order-button">Замовити</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <section class="catalog__description description">
+        <h2 class="visually-hidden">Подробиці</h2>
+        <div class="description__wrapper">
+          <section class="description__box description__box--depiction">
+            <h3 class="description__title">Опис</h3>
+            <p class="description__text">Піч барбекю пофарбована фасадною фарбою. Топка барбекю виконана з вогнетривкої цегли. Знизу передбачено місце для дров. Всередині топки зольник та 2 рівні висоти для решітки або шампурів. Труба димоходу збільшується по висоті за рахунок додаткових сегментів (висота сегмента 33 см.)</p>
+            <p class="description__text">Крім свого основного функціонального призначення, садова піч барбекю буде помітною прикрасою присадибної ділянки. При цьому вона екологічно безпечна для довкілля та має все необхідне для комфортного кулінарного процесу.</p>
+          </section>
+          <section class="description__box description__box--delivery">
+            <h3 class="description__title">Доставка та монтаж</h3>
+
+            <p class="description__text">Вартість монтажу входить у вартість. Камін барбекю складається з окремих модулів, які збираються на місці встановлення. Монтаж барбекю займає 2-3 години. Через 48 годин камін-барбекю готовий до використання.
+              <br> Доставка в м. Івано-Франківськ та околицях (в радіусі 15 км.) безкоштовна.</p>
+          </section>
+        </div>
+        <section class="description__characteristics">
+          <h3 class="description__title description__title--characteristics">Характеристики</h3>
+          <ul class="description__list">
+            <li class="description__item">
+              <h4 class="description__parameter">Тип:</h4>
+              <p class="description__parameter-text">піч барбекю</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Розмір:</h4>
+              <p class="description__parameter-text">висота 225 см. ширина 130 см. глибина 92 см.</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Розмір топки:</h4>
+              <p class="description__parameter-text">висота 55 см. ширина 44 см. глибина 44 см.</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Вага:</h4>
+              <p class="description__parameter-text">650 кг.</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Матеріал:</h4>
+              <p class="description__parameter-text">шлак, зола, шамотна цегла</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Товщина стінки:</h4>
+              <p class="description__parameter-text">9см.</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Тип топлива:</h4>
+              <p class="description__parameter-text">дрова, вугілля</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Колір:</h4>
+              <p class="description__parameter-text"> коричневий, темно коричневий, темно червоний, персиковий, сірий.</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Країна виробник:</h4>
+              <p class="description__parameter-text">Україна</p>
+            </li>
+            <li class="description__item">
+              <h4 class="description__parameter">Гарантія:</h4>
+              <p class="description__parameter-text">48 міс.</p>
+            </li>
+          </ul>
+          <div class="catalog__button-box description__button-box">
+            <a href="#" class="catalog__order-button description__button">Замовити</a>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section class="main-catalog__recommendations recommendations">
+      <div class="recommendations__wrapper">
+        <h2 class="recommendations__title">Рекомендації</h2>
+
+        <ul class="recommendations__list">
+          <li class="recommendations__item">
+            <a href="#" class="recommendations__link">
+              <picture class="recommendations__picture">
+                <source type="image/webp" srcset="img/main/catalog/list/hurman.webp">
+                <img src="img/main/catalog/list/hurman.jpg" alt="Барбекю «Гурман»" class="recommendations__image">
+              </picture>
+              <p class="recommendations__description">Барбекю «Гурман»</p>
+            </a>
+          </li>
+          <li class="recommendations__item">
+            <a href="#" class="recommendations__link">
+              <picture class="recommendations__picture">
+                <source type="image/webp" srcset="img/main/catalog/list/grand.webp">
+                <img src="img/main/catalog/list/grand.jpg" alt="Барбекю «Гурман»" class="recommendations__image">
+              </picture>
+              <p class="recommendations__description">Барбекю «Гранд»</p>
+            </a>
+          </li>
+          <li class="recommendations__item">
+            <a href="#" class="recommendations__link">
+              <picture class="recommendations__picture">
+                <source type="image/webp" srcset="img/main/catalog/list/grand+.webp">
+                <img src="img/main/catalog/list/grand+.jpg" alt="Барбекю «Гурман»" class="recommendations__image">
+              </picture>
+              <p class="recommendations__description">Барбекю «Гранд+»</p>
+            </a>
+          </li>
+          <li class="recommendations__item">
+            <a href="#" class="recommendations__link">
+              <picture class="recommendations__picture">
+                <source type="image/webp" srcset="img/main/catalog/list/hatynka.webp">
+                <img src="img/main/catalog/list/hatynka.jpg" alt="Барбекю «Гурман»" class="recommendations__image">
+              </picture>
+              <p class="recommendations__description">Барбекю «Хатинка»</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <div class="catalog-footer">
+    <include src="src/posthtml/blocks/_footer.html"></include>
+  </div>
+
+  <section class="modal modal--closed">
+    <h2 class="visually-hidden">Модальне вікно</h2>
+
+    <div class="modal__wrapper">
+      <button class="modal__close-button">
+        <span class="visually-hidden">Закрити модальне вікно</span>
+      </button>
+
+      <form class="modal__form">
+        <h4 class="modal__title">Барбекю «Гурман»</h4>
+
+        <p class="modal__request">Залиште заявку</p>
+
+        <p class="modal__connection">Ми зв’яжемося з Вами протягом години</p>
+
+        <input type="text" class="modal__input modal__input--name" name="modal__name" placeholder="Імя Прізвище">
+
+        <input type="tel" class="modal__input modal__input--phone" placeholder="Номер телефону">
+
+        <button class="modal__button" type="submit">Надіслати</button>
+      </form>
+
+      <section class="modal__thanks">
+        <h2 class="modal__thanks-title">Дякуємо Вам!</h2>
+        <p class="modal__thanks-description">Ваша заявка надіслана! <br> Очікуйте дзвінка</p>
+        <a href="#" class="modal__button modal__button--thanks">На головну</a>
+        <section class="modal__socials">
+          <h3 class="modal__socials-title">Шукайте нас у соціальних мережах</h3>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <a href="#" class="modal__link">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="modal__icon modal__icon--facebook" width="10" height="20">
+                  <use xlink:href="#icon-facebook--modal"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__item">
+              <a href="#" class="modal__link">
+                <span class="visually-hidden">Telegram</span>
+                <svg class="modal__icon modal__icon--telegram" width="21" height="18">
+                  <use xlink:href="#icon-telegram--modal"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal__item">
+              <a href="#" class="modal__link">
+                <span class="visually-hidden">Viber</span>
+                <svg class="modal__icon modal__icon--viber" width="24" height="24">
+                  <use xlink:href="#icon-viber--modal"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </section>
+    </div>
+  </section>
+<!--JS-->
+
+  <script src="js/script.js"></script>
+  <script>
+    var swiper = new Swiper('.catalog__inner', {
+      spaceBetween: 0,
+      effect: 'fade',
+      pagination: {
+        el: '.catalog__count',
+        type: 'fraction',
+        currentClass: 'catalog__current',
+        totalClass: 'catalog__total'
+      },
+      navigation: {
+        nextEl: '.catalog__button--next',
+        prevEl: '.catalog__button--prev',
+      },
+      slideClass: 'catalog__image',
+      slideActiveClass: 'catalog__image--active',
+      wrapperClass: 'catalog__photo',
+      setWrapperSize: true,
+      watchOverflow: true,
+      dynamicMainBullets: 2,
+      breakpoints: {
+        1199: {
+          effect: 'flip',
+          pagination: {
+            type: 'bullets'
+          }
+        }
+      }
+    });
+
+    objectFitImages();
+  </script>
+</body>
+</html>
+

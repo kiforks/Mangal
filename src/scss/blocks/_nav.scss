@@ -1,0 +1,35 @@
+.nav__list {
+  @include flex;
+  @include reset-list;
+  width: 100%;
+  line-height: 21px;
+}
+
+.nav__item {
+  flex-grow: 1;
+}
+
+.nav__link {
+  transition: 0.3s ease-in-out;
+  @include hover {
+    color: $gold;
+  }
+}
+
+//Mobile
+@include mobile {
+  .nav__list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav__item {
+    @include margin-negative-mobile;
+    padding: 15px 40px;
+    border-bottom: 1px solid $grey;
+
+    &:first-child {
+      border-top: 1px solid $grey;;
+    }
+  }
+}

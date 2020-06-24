@@ -1,0 +1,95 @@
+.main__about {
+  margin-top: -152px;
+}
+
+.main__heading {
+  position: relative;
+  z-index: 2;
+}
+
+.main__advantages {
+  position: relative;
+  z-index: 3;
+  margin-top: -118px;
+  margin-bottom: 230px;
+}
+
+.main__order {
+  margin-bottom: 138px;
+}
+
+.main__projects {
+  margin-bottom: 205px;
+}
+
+.main__contacts {
+  margin-top: -144px;
+}
+
+.main {
+  overflow: hidden;
+}
+
+
+
+//Tablet
+@include tablet {
+  .main {
+    @include center-margin;
+    overflow: hidden;
+    max-width: 768px;
+  }
+
+  .main__contacts {
+    margin-top: 0;
+  }
+
+  .main__advantages {
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .main__about {
+    margin-top: 0;
+  }
+
+  .main__barbecue {
+    margin-bottom: 0;
+  }
+
+  .main__order {
+    margin-bottom: 0;
+  }
+
+  .main__projects {
+    margin-bottom: 0;
+  }
+}
+
+//Mobile
+@include mobile {
+  .main {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+  }
+
+  .main__heading {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+  .main__advantages {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  .main__contacts {
+    margin-bottom: 40px;
+  }
+
+  .main__reviews {
+    margin-bottom: 25px;
+  }
+}
+
