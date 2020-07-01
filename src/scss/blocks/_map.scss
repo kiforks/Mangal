@@ -2,8 +2,7 @@
   position: relative;
   margin-top: -293px;
   height: 564px;
-  @include background-image('../img/main/background/map.jpg',
-                            '../img/main/background/map.webp');
+  background-image: url('../img/main/background/map.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -55,7 +54,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    background-position: left 38% top;
+    background-position: left 48% top -72px;
   }
 
   .map__link {
