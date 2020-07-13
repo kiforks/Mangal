@@ -38,7 +38,6 @@
 
 .catalog__photo {
   margin: 0;
-  height: 638px;
 }
 
 .catalog__image {
@@ -52,8 +51,8 @@
 
 .catalog__img {
   width: 100%;
-  height: 638px;
-  @include object-fit(cover);
+  //height: 638px;
+  @include object-fit(contain);
 }
 
 .catalog__description-box {
@@ -71,11 +70,18 @@
   position: absolute;
   width: auto;
   bottom: 26px;
-  left: 787px;
+  right: 0;
   margin: 0;
   font-size: 18px;
   line-height: 24px;
+  text-align: right;
   color: black;
+  @media (max-width: 1730px) {
+    color: white;
+  }
+  @media (max-width: 1560px) {
+    right: 15px;
+  }
 }
 
 .catalog__current {
@@ -108,6 +114,7 @@
 .catalog__wrapper {
   @include flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 82%;
   min-width: 1021px;
 }
@@ -122,6 +129,10 @@
 
 .catalog__text {
   margin: 0 0 50px;
+
+  @media (max-width: 1560px)  {
+    margin-bottom: 15px;
+  }
 }
 
 .catalog__color {
@@ -174,6 +185,9 @@
 .catalog__advantages {
   padding-right: 25px;
   margin-bottom: 117px;
+  @media (max-width: 1560px) {
+    margin-bottom: 65px;
+  }
 }
 
 .catalog__advantages-list {
