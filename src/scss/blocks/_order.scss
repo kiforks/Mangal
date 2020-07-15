@@ -53,6 +53,9 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: top left;
+  @media (max-width: 1439px) {
+    margin-right: 50px;
+  }
 
   &--01 {
     background-image: url('../img/svg/01.svg');
@@ -85,6 +88,10 @@
   display: flex;
   flex-direction: column;
   width: 70%;
+
+  @media (max-width: 1439px) {
+    width: 53%;
+  }
 }
 
 .order__link {
