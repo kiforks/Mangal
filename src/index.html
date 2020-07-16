@@ -25,7 +25,7 @@
           <h1 class="heading__caption">Cадові Барбекю</h1>
           <p class="heading__description">Ми виготовляємо функціональні печі барбекю з вишуканим дизайном</p>
           <p class="heading__button" data-aos="fade-right" data-aos-duration="2000">
-            <a href="catalog.html" class="heading__link button">Каталог</a>
+            <button type="button" class="heading__link button">Каталог</button>
           </p>
         </div>
       </div>
@@ -372,6 +372,30 @@
     </section>
 
   </main>
+
+  <section class="modal modal--closed">
+    <h2 class="visually-hidden">Модальне вікно</h2>
+
+    <div class="modal__wrapper">
+      <button class="modal__close-button">
+        <span class="visually-hidden">Закрити модальне вікно</span>
+      </button>
+
+      <form class="modal__form">
+        <h4 class="modal__title">Барбекю «Гурман»</h4>
+
+        <p class="modal__request">Залиште заявку</p>
+
+        <p class="modal__connection">Ми зв’яжемося з Вами протягом години</p>
+
+        <input type="text" class="modal__input modal__input--name" name="modal__name" placeholder="Імя Прізвище">
+
+        <input type="tel" class="modal__input modal__input--phone" placeholder="Номер телефону">
+
+        <button class="modal__button" type="submit">Надіслати</button>
+      </form>
+    </div>
+  </section>
 
    <include src="src/posthtml/blocks/_footer.html"></include>
 

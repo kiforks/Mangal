@@ -53,6 +53,7 @@
 }
 
 .heading__link {
+  background-color: transparent;
   @include hover {
     background-color: $gold;
     color: black;

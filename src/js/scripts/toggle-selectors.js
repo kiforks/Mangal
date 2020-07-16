@@ -49,22 +49,5 @@ selectorToggle('projects__low-description', 'projects__upload-text');
 selectorToggle('header__container', 'nav__link');
 selectorToggle('header__wrapper', 'nav__link');
 selectorToggle('header__button', 'nav__link');
+selectorToggle('modal', 'heading__link');
 
-//
-// function preventDefaultfNone(selector, button) {
-//   let toggleSelector = document.querySelectorAll('.' + selector),
-//       toggleButton = document.querySelectorAll('.' + button),
-//       closedSelector = selector + '--closed';
-//
-//   toggleButton.forEach((buttonItem) => {
-//     buttonItem.addEventListener('click', () => {
-//       toggleSelector.forEach((selectorItem => {
-//         selectorItem.classList.add(closedSelector)
-//       }))
-//     })
-//   })
-// }
-//
-// preventDefaultfNone('header__container', 'nav__item');
-// preventDefaultfNone('header__wrapper', 'nav__item');
-// preventDefaultfNone('header__button', 'nav__item');
